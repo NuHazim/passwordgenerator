@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="practice.css">
+</head>
+<body>
+    <div>
+        <h1>Password Generator</h1>
+        <h2>Enter the length of the password</h2>
+        <input type="number" id="password"><br>
+        <input type="checkbox" name="lower" id="lower">
+        <label for="lower">Lower Case</label><br>
+        <input type="checkbox" name="higher" id="higher">
+        <label for="higher">Higher Case</label><br>
+        <input type="checkbox" name="number" id="number">
+        <label for="number">Number</label><br>
+        <input type="checkbox" name="symbols" id="symbols">
+        <label for="symbols">Symbols</label><br>
+
+        <button type="submit" onclick="gpassword()">Submit</button>
+        <h3 id="thepassword"></h3>
+    </div>
+    <script src="practice.js"></script>
+</body>
+</html>
